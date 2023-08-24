@@ -1,7 +1,8 @@
 import React from "react";
 import Card from "./components/UI/Card";
 import ExpenseItem from "./components/Expenses/ExpenseItem";
-
+import NewExpense from "./components/NewExpense/NewExpense";
+import ExpenseForm from "./components/NewExpense/ExpenseForm";
 const App=()=> {
   const expenses = [
     {
@@ -35,7 +36,7 @@ const App=()=> {
   ];
   return (
     <Card className="expenses">
-      <h2>Let's get started!</h2>
+      <NewExpense/>
       {expenses.map((expense) => {
         return (
           <ExpenseItem 
